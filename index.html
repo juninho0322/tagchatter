@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="src/api.js"></script>
+    <script src="src/main.js"></script>
+    <title>TagChatter</title>
+  </head>
+  <body>
+    <div class="main-div flex w-full min-h-screen">
+      <div class="min-h-full w-20 bg-black">
+        <div class="div-logo flex h-20 justify-center border-b border-white">
+          <img src="src/img/logo.png" alt="" />
+        </div>
+      </div>
+      <div class="min-h-full w-full bg-slate-300">
+        <div
+          class="div-header flex h-20 justify-between items-center px-10 border-b border-white"
+        >
+          <p class="text-3xl">#tagchatter</p>
+
+          <div class="flex">
+            <img src="src/img/light-parrot.svg" alt="" />
+            <span class="text-4xl" id="parrots-counter">0</span>
+          </div>
+        </div>
+        <div class="m-4" id="messages-container"></div>
+
+        <div
+          class="flex fixed bottom-0 left-20 right-0 h-20 bg-slate-400 gap-4 items-center px-4"
+        >
+          <img src="src/img/avatar.png" alt="" class="w-10 h-10" id="avatar" />
+          <input
+            type="text"
+            class="border w-full rounded h-10"
+            id="message-input"
+          />
+
+          <button type="button" id="send-button">
+            <img src="src/img/send.png" alt="" class="w-10 h-10" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script type="module" src="/main.js"></script> -->
+  </body>
+</html>
